@@ -28,13 +28,13 @@
     display: block;
     font-weight: bold;
     padding: 16px 19px;
-    color: #00ff00;
+    color: @blue;
     font-size: 13px;
     line-height: 16px;
 
     .dropdown.open &,
     &:hover {
-      color: #f00;
+      color: @blue;
       text-decoration: none;
       background-color: @base2;
     }
@@ -185,10 +185,10 @@
         font-size: 12px;
         line-height: 21px;
         padding: 11px 19px 10px 21px;
-        color: #42749b;
+        color: @green;
 
         &:hover {
-          background: #f2f6fa;
+          background: @blue;
         }
 
         span {
@@ -260,7 +260,7 @@
 
 .tg_head_connecting {
   &_text {
-    color: #ff0000;
+    color: @red;
     padding: 14px 15px;
     font-size: 13px;
     display: block;
@@ -321,10 +321,10 @@
           font-size: 13px;
           line-height: 15px;
           padding: 11px 18px 11px 18px;
-          color: #52719a;
+          color: @violet;
 
           &:hover {
-            background: #f3f6fa;
+            background: @blue;
           }
         }
       }
@@ -336,7 +336,7 @@
   }
 
   &_return_count {
-    color: #fff;
+    color: @base2;
     margin-left: 3px;
   }
 
@@ -503,7 +503,7 @@
     .rounded(5px);
 
     & > .nano-slider {
-      background: #444;
+      background: @base01;
       background: rgba(0,0,0,.5);
       position              : relative;
       margin                : 0 1px;
@@ -533,7 +533,7 @@
     bottom: 5px;
 
     & > .nano-slider {
-      background: #d1d1d1;
+      background: @base1;
       background : rgba(0,0,0,0.17);
       margin: 0 3px 0 4px;
     }
@@ -581,18 +581,18 @@
 }
 
 .im_page_wrap {
-  background: #fff;
+  background: @base3;
   max-width: 1010px;
   min-width: 300px;
   margin: 0 auto;
 
-  .box-shadow(0px 1px 0 #dfe5ec);
+  .box-shadow(0px 1px 0 @base1);
 
   border-radius: 0 0 3px 3px;
 
-  border-left: 1px solid #dfe5ec;
-  border-right: 1px solid #dfe5ec;
-  border-bottom: 1px solid #d2dbe3;
+  border-left: 1px solid @base1;
+  border-right: 1px solid @base1;
+  border-bottom: 1px solid @base2;
 
   overflow: hidden;
 }
@@ -601,7 +601,7 @@
   &_wrap {
     font-size: 11px;
     text-align: center;
-    color: #9cacb9;
+    color: @blue;
     line-height: 40px;
   }
 
@@ -610,14 +610,14 @@
   }
 
   &_brand {
-    color: #9cacb9;
+    color: @blue;
     font-weight: bold;
   }
 }
 
 a {
   &.footer_lang_link {
-    color: #9cacb9;
+    color: @blue;
 
     &.active {
       font-weight: bold;
@@ -625,7 +625,7 @@ a {
   }
 
   &.footer_link {
-    color: #9cacb9;
+    color: @blue;
     padding: 0 3px;
   }
 }
@@ -636,7 +636,7 @@ a.footer_lang_link.active:hover,
 a.footer_lang_link.active:active,
 a.footer_link.active:hover,
 a.footer_link.active:active {
-  color: #8499aa;
+  color: @blue;
   text-decoration: none;
 }
 
@@ -650,7 +650,7 @@ a.footer_link.active:active {
   &_wrap {
     float: left;
     width: 31%;
-    border-right: 2px solid #E9EBED;
+    border-right: 2px solid @base00;
     padding-bottom: 10px;
   }
 }
@@ -765,7 +765,7 @@ a.footer_link.active:active {
 
     & > .nano-slider {
       .rounded(1px);
-      background: #d1d1d1;
+      background: @base0;
       background: rgba(137, 160, 179, 0.5);
       margin: 0;
     }
@@ -796,13 +796,13 @@ a.footer_link.active:active {
 
   &_typing {
     font-size: 11px;
-    color: #999;
+    color: @base2;
     max-width: 556px;
     margin: 0 auto;
     padding: 13px 81px 8px 85px;
 
     a.im_history_typing_author {
-      color: #999;
+      color: @base2;
       font-weight: bold;
     }
   }
@@ -831,13 +831,13 @@ a.footer_link.active:active {
       a.contacts_modal_contact,
       a.contacts_modal_contact:hover {
         background: @base1;
-        color: #fff;
+        color: @base3;
       }
 
       a.contacts_modal_contact .md_modal_list_peer_description,
       a.contacts_modal_contact:hover .md_modal_list_peer_description,
       a.contacts_modal_contact .md_modal_list_peer_description .status_online {
-        color: #fff;
+        color: @base3;
       }
     }
   }
@@ -873,7 +873,7 @@ a.footer_link.active:active {
   &_edit_panel_border {
     display: block;
     margin: 0 0 42px 3px;
-    border-bottom: 1px solid #EEE;
+    border-bottom: 1px solid @base3;
   }
 
   &_edit_cancel_link {
@@ -899,7 +899,7 @@ a.footer_link.active:active {
   }
 
   &_selected_count {
-    color: #b9cfe3;
+    color: @blue;
   }
 
   &_submit {
@@ -1035,7 +1035,7 @@ a.footer_link.active:active {
 
 .icon-message-status {
   pointer-events: none;
-  background: #4eabf1;
+  background: @blue;
   border: 0;
   display: block;
   width: 10px;
@@ -1094,7 +1094,7 @@ a.footer_link.active:active {
 
   &_modal_recipients_empty,
   &_modal_recipients_name {
-    color: #999;
+    color: @base1;
   }
 
   &_modal_recipient {
@@ -1108,7 +1108,7 @@ a.footer_link.active:active {
 }
 
 a.peer_select_modal_share_link {
-  color: #999 !important;
+  color: @base1 !important;
 }
 
 @media (max-height: 600px), (max-width: 1010px) {
@@ -1177,8 +1177,8 @@ a.im_panel_peer_photo .peer_initials {
 }
 
 .im_panel_peer_online {
-  background: #6ec26d;
-  border: 2px solid #fff;
+  background: @green;
+  border: 2px solid @base3;
   display: block;
   width: 14px;
   height: 14px;
@@ -1225,7 +1225,7 @@ a.im_panel_peer_photo .peer_initials {
   border: 0;
   box-shadow: none;
   outline: none;
-  box-shadow: 0 1px 0 0 #e8e8e8;
+  box-shadow: 0 1px 0 0 @base2;
   padding: 1px 28px 1px 0;
   position: relative;
   margin: 0;
@@ -1238,7 +1238,7 @@ a.im_panel_peer_photo .peer_initials {
     border: 0;
     box-shadow: none;
     outline: none;
-    box-shadow: 0 2px 0 0 #77b7e4;
+    box-shadow: 0 2px 0 0 @blue;
   }
 
   .im_send_field_wrap_2ndbtn & {
@@ -1345,11 +1345,11 @@ a.im_panel_peer_photo .peer_initials {
 
   border-radius: 50px;
   overflow: hidden;
-  background: #fff;
+  background: @base3;
   transition: background-color linear 0.2s;
 
   .im_send_form_hover .im_voice_recording & {
-    background: #cae9ff;
+    background: @blue;
   }
 }
 
@@ -1719,7 +1719,7 @@ a.im_panel_peer_photo .peer_initials {
     clear: both;
     font-weight: normal;
     line-height: 1.428571429;
-    color: #333333;
+    color: @base0;
     white-space: nowrap;
     font-size: 13px;
     overflow: hidden;
@@ -1727,8 +1727,8 @@ a.im_panel_peer_photo .peer_initials {
 
     &:hover {
       text-decoration: none;
-      color: #262626;
-      background-color: #f5f5f5;
+      color: @base1;
+      background-color: @base2;
     }
   }
 
@@ -1805,8 +1805,8 @@ a.im_panel_peer_photo .peer_initials {
       input {
         font-size: 12px;
         line-height: normal;
-        background: #f2f2f2;
-        border: 1px solid #f2f2f2;
+        background: @base2;
+        border: 1px solid @base2;
         border-radius: 0;
         padding: 6px 6px 6px 6px;
         margin-bottom: 0;
@@ -1814,7 +1814,7 @@ a.im_panel_peer_photo .peer_initials {
 
         &:focus,
         &:active {
-          background-color: #fff;
+          background-color: @base3;
         }
       }
     }
@@ -1832,7 +1832,7 @@ a.im_panel_peer_photo .peer_initials {
 
   &_user_phone,
   &_version {
-    color: #999;
+    color: @base0;
   }
 }
 
@@ -1856,7 +1856,7 @@ a.im_panel_peer_photo .peer_initials {
 .icon-volume {
   &-outer {
     display: inline-block;
-    background: #c7c7c7;
+    background: @base0;
     border-radius: 10px;
     overflow: hidden;
     height: 18px;
@@ -1867,7 +1867,7 @@ a.im_panel_peer_photo .peer_initials {
 
   &-inner {
     display: block;
-    background: #fff;
+    background: @base3;
     float: left;
     width: 2px;
     vertical-align: bottom;
@@ -1906,14 +1906,14 @@ a.im_panel_peer_photo .peer_initials {
   display: inline-block;
 }
 .im_message_selected .im_message_outer_wrap {
-  background: #f2f6fa;
+  background: @base3;
 }
 
 .im_history_selectable .im_message_outer_wrap {
   cursor: pointer;
 }
 .im_history_select_active .im_message_outer_wrap:hover {
-  background: #f2f6fa;
+  background: @base3;
 }
 
 .im_message_wrap {
@@ -2089,7 +2089,7 @@ a.im_panel_peer_photo .peer_initials {
   .im_dialog_date,
   a.im_dialog:hover .im_dialog_date,
   a.im_dialog_selected .im_dialog_date {
-    color: @base2;
+    color: @base1;
   }
 }
 
@@ -2248,7 +2248,7 @@ a.im_panel_peer_photo .peer_initials {
       left: 0;
       right: 0;
       height: 64px;
-      background: #313131;
+      background: @base0;
     }
   }
 
