@@ -7,7 +7,10 @@
     max-width: 1010px;
     margin: 0 auto;
     height: 48px;
-    background: #5682a3;
+    background-color: @base2;
+  }
+  &_split:hover {
+      background-color: @base2;
   }
 
   &_logo_wrap {
@@ -25,15 +28,15 @@
     display: block;
     font-weight: bold;
     padding: 16px 19px;
-    color: #b9cfe3;
+    color: #00ff00;
     font-size: 13px;
     line-height: 16px;
 
     .dropdown.open &,
     &:hover {
-      color: #fff;
+      color: #f00;
       text-decoration: none;
-      background: #497799;
+      background-color: @base2;
     }
 
     .dropdown.open & {
@@ -45,7 +48,7 @@
 
 .tg_head_logo_dropdown {
   .dropdown-toggle {
-    color: #fff;
+    color: @base2;
     padding: 17px 20px 15px 22px;
     display: block;
     font-size: 14px;
@@ -85,7 +88,7 @@
 
 .icon-hamburger-wrap {
   .icon-bar {
-    background: #fff;
+    background: @base1;
     display: block;
     height: 2px;
     margin: 0;
@@ -257,7 +260,7 @@
 
 .tg_head_connecting {
   &_text {
-    color: #b9cfe3;
+    color: #ff0000;
     padding: 14px 15px;
     font-size: 13px;
     display: block;
@@ -356,7 +359,7 @@
 
   &_title {
     display: inline-block;
-    color: #fff;
+    color: @base1;
     margin-right: 3px;
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis;
@@ -367,7 +370,7 @@
 
   &_media {
     padding: 14px 19px;
-    color: #fff;
+    color: @base1;
     font-size: 13px;
     line-height: 20px;
     float: left;
@@ -392,7 +395,7 @@
 
     .icon-bar {
       display: block;
-      background-color: #d7e5f0;
+      background-color: @base1;
       width: 4px;
       height: 4px;
       border-radius: 2px;
@@ -827,7 +830,7 @@ a.footer_link.active:active {
     .active {
       a.contacts_modal_contact,
       a.contacts_modal_contact:hover {
-        background: #6490b1;
+        background: @base1;
         color: #fff;
       }
 
@@ -900,7 +903,7 @@ a.footer_link.active:active {
   }
 
   &_submit {
-    color: #499dd9;
+    color: @base3;
     font-size: 13px;
     line-height: 18px;
     height: 18px;
@@ -914,7 +917,7 @@ a.footer_link.active:active {
     font-weight: bold;
 
     &:hover {
-      color: #3589c5;
+      color: @base3;
       background: inherit;
     }
   }
@@ -959,7 +962,7 @@ a.footer_link.active:active {
 .im_history_select_active .im_message_outer_wrap:hover .im_message_author_admin,
 .im_history_select_active .im_message_outer_wrap:hover .im_message_views_cnt,
 .im_history_select_active .im_message_outer_wrap:hover .im_message_sign_link {
-  color: #899daf;
+    color: @base3;
 }
 
 .icon-select-tick {
@@ -1580,7 +1583,7 @@ a.im_panel_peer_photo .peer_initials {
   }
 
   &_status {
-    color: #999;
+    color: @base3;
     margin-bottom: 15px;
   }
 }
@@ -1647,7 +1650,7 @@ a.im_panel_peer_photo .peer_initials {
   }
 
   &_members_count {
-    color: #999;
+    color: @base3;
     margin-bottom: 16px;
   }
 
@@ -2086,7 +2089,7 @@ a.im_panel_peer_photo .peer_initials {
   .im_dialog_date,
   a.im_dialog:hover .im_dialog_date,
   a.im_dialog_selected .im_dialog_date {
-    color: #fff;
+    color: @base2;
   }
 }
 
